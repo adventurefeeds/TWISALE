@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'brusherbold';
+    src: url('../fonts/brusher-webfont.eot');
+    src: url('../fonts/brusher-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/brusher-webfont.woff2') format('woff2'),
+    url('../fonts/brusher-webfont.woff') format('woff'),
+    url('../fonts/brusher-webfont.ttf') format('truetype'),
+    url('../fonts/brusher-webfont.svg#brusherbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    /*font-family: 'brusherbold';*/
+    font-family: 'Oswald', sans-serif;
+    background-color: #ffffff;
+    background-repeat: repeat;
+}
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../images/poster.jpg) no-repeat;
+    background-size: cover;
+}
+.cen {
+    margin-right: auto;
+    margin-left: auto
+}
+.opac {
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+@media(max-width:767px){
+}
+@media(min-width:768px){
+    .navbar-toggle {
+        margin: 23px 0;
+    }
+
+    .navbar-nav, .navbar-nav li, .navbar-nav li a {
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .navbar-nav li a {
+        padding-top: 0;
+        padding-bottom:0;
+    }
+}
+@media(min-width:992px){
+}
+@media(min-width:1200px){
+}
